@@ -78,7 +78,6 @@ const KALI_LOGO = `
     </span>
   `;
 
-
 const COMMANDS: Record<
   string,
   (username: string, args: string[]) => string
@@ -88,6 +87,8 @@ const COMMANDS: Record<
   photography: () => openLink("https://shorturl.at/WXNA0"),
   date: () => new Date().toLocaleDateString(),
   github: () => openLink("https://github.com/ParseDotEXE"),
+  resume: () => openLink("https://drive.google.com/file/d/1SlYK6HTBYrTG_8krhr6LRcvmNvLxSpyF/view?usp=sharing"),
+  projects: () => openLink("https://github.com/ParseDotEXE?tab=repositories"),
   linkedin: () => openLink("https://www.linkedin.com/in/parsa-rahimnia/"),
   email: () => openLink("mailto:parsarahimnia@gmail.com"),
   dog: () =>
@@ -95,7 +96,7 @@ const COMMANDS: Record<
   kali: () => KALI_LOGO,
   about: (username) => `Hello, ${username}!
 
-    My name is Parsa and I'm 21 years old. I'm originally from <b>Tehran, Iran</b>, currently residing in <b>Montreal, Canada</b>. I’m into applied and theoretical <b>Computer Science</b> and <b>Cognitive Science</b>. 
+    My name is Parsa and I'm 21 years old. I'm originally from <b>Tehran, Iran</b>, currently residing in <b>Montreal, Canada</b>. I'm into applied and theoretical <b>Computer Science</b> and <b>Cognitive Science</b>. 
     
     I also love hiking, playing video games, lifting, and pretending to be a photographer with my iPhone (check out the gallery).
     
@@ -111,8 +112,7 @@ export const COMMAND_NAMES = [...Object.keys(COMMANDS), "clear", "help"].sort(
 
 export function getCommandResponse(
   { command, sudo, args }: Prompt,
-  username: string,
-  history: string[]
+  username: string
 ) {
   if (sudo && !command) return "Usage: sudo [command] [args]";
   if (!command) return "";

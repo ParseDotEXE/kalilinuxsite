@@ -53,7 +53,6 @@ const TerminalBody: FC<TerminalBodyProps> = () => {
         response: getCommandResponse(
           { command, args, sudo },
           username,
-          promptHistory
         ),
       },
     ]);
