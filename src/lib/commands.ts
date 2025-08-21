@@ -92,7 +92,7 @@ const COMMANDS: Record<
   linkedin: () => openLink("https://www.linkedin.com/in/parsa-rahimnia/"),
   email: () => openLink("mailto:parsarahimnia@gmail.com"),
   dog: () =>
-    `Here's a cute dog for you! 🐶<br/><br/>${openLink("https://shorturl.at/rBlzf")}`,
+    `Here's a cute dog for you! 🐶<br/><br/>${openLink("https://drive.google.com/file/d/1Z75fqvTFwi9vj8cfjuFM0gk5xJ11YykO/view?usp=drive_link")}`,
   kali: () => KALI_LOGO,
   about: (username) => `Hello, ${username}!
 
