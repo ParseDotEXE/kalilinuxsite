@@ -87,12 +87,12 @@ const COMMANDS: Record<
   photography: () => openLink("https://shorturl.at/WXNA0"),
   date: () => new Date().toLocaleDateString(),
   github: () => openLink("https://github.com/ParseDotEXE"),
-  resume: () => openLink("https://drive.google.com/file/d/1SlYK6HTBYrTG_8krhr6LRcvmNvLxSpyF/view?usp=sharing"),
+  resume: () => openLink("https://drive.google.com/file/d/19uIrd-ivEBy49pGn6lth-UYH1ht7bbc-/view?usp=sharing"),
   projects: () => openLink("https://github.com/ParseDotEXE?tab=repositories"),
   linkedin: () => openLink("https://www.linkedin.com/in/parsa-rahimnia/"),
   email: () => openLink("mailto:parsarahimnia@gmail.com"),
   dog: () =>
-    `Here's a cute dog for you! 🐶<br/><br/>${openLink("https://drive.google.com/file/d/1Z75fqvTFwi9vj8cfjuFM0gk5xJ11YykO/view?usp=drive_link")}`,
+    `Here's a cute dog for you! 🐶<br/><br/>${openLink("https://drive.google.com/file/d/1houSCPa58YGSwa91MvN9uMpEnHQumcUP/view?usp=sharing")}`,
   kali: () => KALI_LOGO,
   about: (username) => `Hello, ${username}!
 
