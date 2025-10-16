@@ -87,7 +87,6 @@ const COMMANDS: Record<
   photography: () => openLink("https://shorturl.at/WXNA0"),
   date: () => new Date().toLocaleDateString(),
   github: () => openLink("https://github.com/ParseDotEXE"),
-  resume: () => openLink("https://drive.google.com/file/d/1gbNTnSr604jeSc_9EKXG63JS65QUrdjt/view?usp=sharing"),
   projects: () => openLink("https://github.com/ParseDotEXE?tab=repositories"),
   linkedin: () => openLink("https://www.linkedin.com/in/parsa-rahimnia/"),
   email: () => openLink("mailto:parsarahimnia@gmail.com"),
