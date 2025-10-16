@@ -90,8 +90,8 @@ const COMMANDS: Record<
   projects: () => openLink("https://github.com/ParseDotEXE?tab=repositories"),
   linkedin: () => openLink("https://www.linkedin.com/in/parsa-rahimnia/"),
   email: () => openLink("mailto:parsarahimnia@gmail.com"),
-  dog: () =>
-    `Here's a cute dog for you! 🐶<br/><br/>${openLink("https://drive.google.com/file/d/1houSCPa58YGSwa91MvN9uMpEnHQumcUP/view?usp=sharing")}`,
+  //dog: () =>
+    //`Here's a cute dog for you! 🐶<br/><br/>${openLink("https://drive.google.com/file/d/1houSCPa58YGSwa91MvN9uMpEnHQumcUP/view?usp=sharing")}`,//
   kali: () => KALI_LOGO,
   about: (username) => `Hello, ${username}!
 
